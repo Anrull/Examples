@@ -12,3 +12,8 @@ redis:
   host: "localhost:6379"
   password: ""
   db: 0
+smtp:
+  host: "smtp.mail.ru"
+  port: "465"
+  username: "sXb5U@example.com"
+  password: "7Kd2gAqHnMqRbG3b"

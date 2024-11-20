@@ -4,6 +4,7 @@ import (
 	"Examples/BaseProject/internal/config"
 	"Examples/BaseProject/internal/handlers"
 	"Examples/BaseProject/internal/logger"
+	"Examples/BaseProject/internal/mail"
 	"Examples/BaseProject/internal/models"
 	"Examples/BaseProject/internal/routes"
 	"Examples/BaseProject/pkg/env"
@@ -27,6 +28,9 @@ func main() {
 
 	models.New(cfg)
 	logger.Info("База данных подключена")
+
+	mail.New(cfg)
+	logger.Info("Почта подключена")
 
 	e := echo.New()
 
