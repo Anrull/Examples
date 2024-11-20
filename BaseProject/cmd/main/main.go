@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Examples/BaseProject/internal/bot"
 	"Examples/BaseProject/internal/config"
 	"Examples/BaseProject/internal/handlers"
 	"Examples/BaseProject/internal/logger"
@@ -31,6 +32,9 @@ func main() {
 
 	mail.New(cfg)
 	logger.Info("Почта подключена")
+
+	go bot.New(cfg)
+	logger.Info("Бот подключен")
 
 	e := echo.New()
 
