@@ -1,0 +1,14 @@
+server_port: "localhost:7778"
+log_file: "storage/logs/log.json"
+database:
+  host: "213.171.24.110"
+  user: "postgres"
+  password: "hm7ihxhe9ufet9lu"
+  dbname: "database"
+  port: "5000"
+  sslmode: "disable"
+  TimeZone: "Europe/Moscow"
+redis:
+  host: "localhost:6379"
+  password: ""
+  db: 0
